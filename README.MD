@@ -1,6 +1,6 @@
 # Project´s description:
 
-This a webServer to serve any frontend app.
+This a webServer deploy in heroku to serve any frontend app.
 
 ## Tools used:
 
