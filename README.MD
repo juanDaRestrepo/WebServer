@@ -1,6 +1,6 @@
 # Project´s description:
 
-This a webServer to practice all the aspects of making one.
+This a webServer to serve any frontend app.
 
 ## Tools used:
 
