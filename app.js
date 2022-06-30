@@ -12,7 +12,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 // Servir contenido estatico
 app.use(express.static('public'));
 
-app.get('/',  (req, res) => {
+/* app.get('/',  (req, res) => {
   res.render('home', {
     name : 'Daniel Restrepo',
     title: 'My First WebServer With Node'
@@ -31,9 +31,11 @@ app.get('/elements',  (req, res) => {
     name : 'Daniel Restrepo',
     title: 'My First WebServer With Node'
   });
-});
+}); */
 
-
+app.get('*', (req, res) => {
+  res.sendFile(__dirname + '/public/index.html');
+})
 
 
 app.listen(port, () => {
